@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 50.0, 95.0, 1218.0, 915.0 ],
+		"rect" : [ 50.0, 87.0, 1048.0, 915.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,84 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-203",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 825.0, 1450.5, 134.0, 35.0 ],
+					"text" : "21 \"Bender Futurama\" 2182.675737"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-201",
+					"maxclass" : "newobj",
+					"numinlets" : 3,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 824.0, 1401.5, 50.0, 22.0 ],
+					"text" : "pak i s f"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-194",
+					"linecount" : 9,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1192.5, 343.0, 150.0, 127.0 ],
+					"text" : "todos:\n-> make sounds play from where they were last stopped\n-> add the rest of the dots (to correspond w/the image)\n-> train the model\n-> add readme"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 0,
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-176",
+					"interval" : 250.0,
+					"maxclass" : "number~",
+					"mode" : 2,
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "float" ],
+					"patching_rect" : [ 1204.0, 1610.0, 106.0, 23.0 ],
+					"sig" : 0.0
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-174",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1253.0, 1457.0, 51.0, 22.0 ],
+					"text" : "seek $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-165",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1094.384612560272217, 1434.0, 65.0, 22.0 ],
+					"text" : "open $1, 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 11.595186999999999,
 					"id" : "obj-155",
@@ -47,8 +125,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1494.039859771728516, 1318.543156385421753, 88.0, 21.0 ],
-					"text" : "sprintf %.2d.jpg"
+					"patching_rect" : [ 1383.0, 1432.0, 119.0, 21.0 ],
+					"text" : "sprintf symout %s.jpg"
 				}
 
 			}
@@ -61,18 +139,6 @@
 					"outlettype" : [ "int" ],
 					"patching_rect" : [ 934.5, 1235.660577178001404, 29.5, 22.0 ],
 					"text" : "- 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-147",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1094.23080575466156, 1435.576970994472504, 79.0, 22.0 ],
-					"text" : "append .mp3"
 				}
 
 			}
@@ -105,10 +171,10 @@
 					"id" : "obj-137",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1122.384612560272217, 1240.38465678691864, 32.0, 22.0 ],
-					"text" : "gate"
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 1122.384612560272217, 1240.38465678691864, 42.0, 22.0 ],
+					"text" : "gate 2"
 				}
 
 			}
@@ -118,99 +184,99 @@
 						"count" : 24,
 						"data" : [ 							{
 								"key" : 1,
-								"value" : [ "Mayor.mp3" ]
+								"value" : [ "Mayor", 0 ]
 							}
 , 							{
 								"key" : 2,
-								"value" : [ "General Mandible.mp3" ]
+								"value" : [ "General Mandible", 0 ]
 							}
 , 							{
 								"key" : 3,
-								"value" : [ "Lord Farquaad.mp3" ]
+								"value" : [ "Lord Farquaad", 0 ]
 							}
 , 							{
 								"key" : 4,
-								"value" : [ "Izma.mp3" ]
+								"value" : [ "Izma" ]
 							}
 , 							{
 								"key" : 5,
-								"value" : [ "Squidward.mp3" ]
+								"value" : [ "Squidward" ]
 							}
 , 							{
 								"key" : 6,
-								"value" : [ "Chairman Drek.mp3" ]
+								"value" : [ "Chairman Drek" ]
 							}
 , 							{
 								"key" : 7,
-								"value" : [ "Donald Duck.mp3" ]
+								"value" : [ "Donald Duck" ]
 							}
 , 							{
 								"key" : 8,
-								"value" : [ "Cartman.mp3" ]
+								"value" : [ "Cartman" ]
 							}
 , 							{
 								"key" : 9,
-								"value" : [ "Simba.mp3" ]
+								"value" : [ "Simba" ]
 							}
 , 							{
 								"key" : 10,
-								"value" : [ "Johnny Bravo.mp3" ]
+								"value" : [ "Johnny Bravo" ]
 							}
 , 							{
 								"key" : 11,
-								"value" : [ "Hank Hill.mp3" ]
+								"value" : [ "Hank Hill" ]
 							}
 , 							{
 								"key" : 12,
-								"value" : [ "Stan Smith.mp3" ]
+								"value" : [ "Stan Smith" ]
 							}
 , 							{
 								"key" : 13,
-								"value" : [ "Robin.mp3" ]
+								"value" : [ "Robin" ]
 							}
 , 							{
 								"key" : 14,
-								"value" : [ "Ang.mp3" ]
+								"value" : [ "Ang" ]
 							}
 , 							{
 								"key" : 15,
-								"value" : [ "Master Shifu.mp3" ]
+								"value" : [ "Master Shifu" ]
 							}
 , 							{
 								"key" : 16,
-								"value" : [ "Shrek.mp3" ]
+								"value" : [ "Shrek" ]
 							}
 , 							{
 								"key" : 17,
-								"value" : [ "Daria.mp3" ]
+								"value" : [ "Daria" ]
 							}
 , 							{
 								"key" : 18,
-								"value" : [ "Lisa Simpsons.mp3" ]
+								"value" : [ "Lisa Simpson" ]
 							}
 , 							{
 								"key" : 19,
-								"value" : [ "Homer Simpsons.mp3" ]
+								"value" : [ "Homer Simpson" ]
 							}
 , 							{
 								"key" : 20,
-								"value" : [ "Mickey Mouse.mp3" ]
+								"value" : [ "Mickey Mouse" ]
 							}
 , 							{
 								"key" : 21,
-								"value" : [ "Bender Futurama.mp3" ]
+								"value" : [ "Bender Futurama" ]
 							}
 , 							{
 								"key" : 22,
-								"value" : [ "Beavis And Butthead.mp3" ]
+								"value" : [ "Beavis And Butthead" ]
 							}
 , 							{
 								"key" : 23,
-								"value" : [ "Mr. Krabs.mp3" ]
+								"value" : [ "Mr. Krabs" ]
 							}
 , 							{
 								"key" : 24,
-								"value" : [ "Rick & Morty.mp3" ]
+								"value" : [ "Rick & Morty" ]
 							}
  ]
 					}
@@ -276,7 +342,7 @@
 					"orientation" : 1,
 					"outlettype" : [ "signal", "signal", "", "float", "list" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 1129.23080575466156, 1581.547603964805603, 129.0, 39.0 ],
+					"patching_rect" : [ 1094.384612560272217, 1535.0, 129.0, 39.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ -70 ],
@@ -304,7 +370,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1129.23080575466156, 1632.142841577529907, 44.0, 44.0 ],
+					"patching_rect" : [ 1096.884612560272217, 1664.0, 44.0, 44.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 689.0, 431.0, 84.0, 84.0 ],
 					"prototypename" : "helpfile"
@@ -316,22 +382,10 @@
 					"id" : "obj-163",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
-					"numoutlets" : 3,
-					"outlettype" : [ "signal", "signal", "bang" ],
-					"patching_rect" : [ 1129.23080575466156, 1528.571413993835449, 57.0, 22.0 ],
-					"text" : "sfplay~ 2"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-162",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 1095.897472739219666, 1483.333319187164307, 83.0, 22.0 ],
-					"text" : "prepend open"
+					"numoutlets" : 4,
+					"outlettype" : [ "signal", "signal", "signal", "bang" ],
+					"patching_rect" : [ 1094.384612560272217, 1479.0, 97.0, 22.0 ],
+					"text" : "sfplay~ 2 6000 1"
 				}
 
 			}
@@ -341,7 +395,7 @@
 						"count" : 24,
 						"data" : [ 							{
 								"key" : 1,
-								"value" : [ "Nicolae Ceausescu" ]
+								"value" : [ "Nicolae Ceausescu", 200 ]
 							}
 , 							{
 								"key" : 2,
@@ -385,7 +439,7 @@
 							}
 , 							{
 								"key" : 12,
-								"value" : [ "Banjamin Netanyahu" ]
+								"value" : [ "Benjamin Netanyahu" ]
 							}
 , 							{
 								"key" : 13,
@@ -670,7 +724,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1497.115434587001801, 1385.57696932554245, 71.0, 22.0 ],
+					"patching_rect" : [ 1383.0, 1562.0, 71.0, 22.0 ],
 					"text" : "prepend pic"
 				}
 
@@ -682,8 +736,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1497.115434587001801, 1354.166653752326965, 123.0, 22.0 ],
-					"text" : "string u645011206"
+					"patching_rect" : [ 1383.0, 1507.0, 138.117693720066654, 22.0 ],
+					"text" : "\"Bender Futurama.jpg\""
 				}
 
 			}
@@ -696,8 +750,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 1497.115434587001801, 1435.576970994472504, 281.733072815144169, 375.77980665950588 ],
-					"pic" : "Obama",
+					"patching_rect" : [ 1495.266927184855831, 1646.0, 281.733072815144169, 375.77980665950588 ],
+					"pic" : "Bender Futurama.jpg",
 					"presentation" : 1,
 					"presentation_rect" : [ 689.0, 529.0, 282.0, 376.135838150289032 ]
 				}
@@ -8089,6 +8143,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-137", 1 ],
+					"order" : 0,
+					"source" : [ "obj-130", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-201", 0 ],
+					"order" : 1,
 					"source" : [ "obj-130", 0 ]
 				}
 
@@ -8250,15 +8313,13 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-132", 0 ],
-					"order" : 0,
-					"source" : [ "obj-137", 0 ]
+					"source" : [ "obj-137", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-159", 0 ],
-					"order" : 1,
 					"source" : [ "obj-137", 0 ]
 				}
 
@@ -8315,13 +8376,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-162", 0 ],
-					"source" : [ "obj-147", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-156", 0 ],
 					"source" : [ "obj-148", 0 ]
 				}
@@ -8343,7 +8397,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-124", 1 ],
+					"order" : 0,
+					"source" : [ "obj-155", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-124", 0 ],
+					"order" : 1,
 					"source" : [ "obj-155", 0 ]
 				}
 
@@ -8378,13 +8441,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-163", 0 ],
-					"source" : [ "obj-162", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-164", 1 ],
 					"source" : [ "obj-163", 1 ]
 				}
@@ -8399,6 +8455,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-176", 0 ],
+					"source" : [ "obj-163", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-171", 1 ],
 					"source" : [ "obj-164", 1 ]
 				}
@@ -8408,6 +8471,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-171", 0 ],
 					"source" : [ "obj-164", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-163", 0 ],
+					"source" : [ "obj-165", 0 ]
 				}
 
 			}
@@ -8464,9 +8534,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-147", 0 ],
-					"order" : 1,
-					"source" : [ "obj-175", 0 ]
+					"destination" : [ "obj-163", 0 ],
+					"source" : [ "obj-174", 0 ]
 				}
 
 			}
@@ -8475,6 +8544,29 @@
 					"destination" : [ "obj-155", 0 ],
 					"order" : 0,
 					"source" : [ "obj-175", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-165", 0 ],
+					"order" : 1,
+					"source" : [ "obj-175", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-201", 1 ],
+					"order" : 2,
+					"source" : [ "obj-175", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-201", 2 ],
+					"source" : [ "obj-176", 1 ]
 				}
 
 			}
@@ -8608,6 +8700,22 @@
 				"patchline" : 				{
 					"destination" : [ "obj-85", 0 ],
 					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-203", 1 ],
+					"order" : 0,
+					"source" : [ "obj-201", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-203", 0 ],
+					"order" : 1,
+					"source" : [ "obj-201", 0 ]
 				}
 
 			}
@@ -9315,7 +9423,14 @@
 			"inherited_shortname" : 1
 		}
 ,
-		"dependency_cache" : [  ],
+		"dependency_cache" : [ 			{
+				"name" : "Bender Futurama.jpg",
+				"bootpath" : "~/Desktop/master/an 2/creative coding/sonification-sandbox/characters-imgs",
+				"patcherrelativepath" : "../sonification-sandbox/characters-imgs",
+				"type" : "JPEG",
+				"implicit" : 1
+			}
+ ],
 		"autosave" : 0
 	}
 
