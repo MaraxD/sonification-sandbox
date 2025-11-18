@@ -1,11 +1,23 @@
 let pointCoordinates={
-  "blue": [{"x":112, "y":92}, {"x":289, "y":120}, {"x":110, "y":35}, {"x":221, "y":55}, {"x":269, "y":196}],
-  "red": [{"x":413, "y":140}, {"x":334, "y":132}, {"x":521, "y":96}, {"x":384, "y":148}, {"x":330, "y":48}],
-  "yellow": [{"x":13, "y":278}, {"x":101, "y":409}, {"x":209, "y":332}, {"x":52, "y":367}, {"x":110, "y":266}],
-  "green": [{"x":522, "y":340}, {"x":544, "y":283}, {"x":535, "y":327}, {"x":611, "y":362}, {"x":346, "y":246}]
+  //Pinochet, Hitler, Trump, Russia, Netanyahu, Obama
+  "blue": [{"x":20, "y":20}, {"x":260, "y":40}, {"x":130, "y":100}, {"x":300, "y":150}, {"x":45, "y":150}, {"x":260, "y":200}],
+  //Stalin, Ceausescu, Mao, Mugabe, China, Castro
+  "red": [{"x":overlay.width - 50, "y":30}, {"x":overlay.width - 70, "y":80}, {"x":overlay.width-10, "y":110}, {"x":overlay.width-110, "y":80}, {"x":overlay.width-160, "y":110}, {"x":overlay.width-110, "y":140}],
+  //nicusor, friedman, basescu, rand, havier, elon
+  "yellow": [{"x":300, "y":overlay.height/2 + 20}, {"x":240, "y":overlay.height/2 + 60}, {"x":280, "y":overlay.height/2 + 80}, {"x":20, "y":overlay.height/2 + 150}, {"x":200, "y":overlay.height/2 + 170}, {"x":45, "y":overlay.height-20}],
+  //sanders, che, mlk, gandhi, mandela, aoc
+  "green": [{"x":overlay.width-110, "y":overlay.height/2 + 20}, {"x":overlay.width-10, "y":overlay.height/2 + 60}, {"x":overlay.width-160, "y":overlay.height/2 + 60}, {"x":overlay.width-100, "y":overlay.height/2 + 60}, {"x":overlay.width-100, "y":overlay.height/2 + 130}, {"x":overlay.width-160, "y":overlay.height/2 + 150}]
 }
 
 function drawCompass(canvas){
+  // add axis text
+  canvas.font = "20px Arial";
+  canvas.fillText("Authoritarian", (overlay.width/2), 20);
+  canvas.fillText("Left", 0, overlay.height/2);
+  canvas.fillText("Right", overlay.width-50, overlay.height/2);
+  canvas.fillText("Libertarian", overlay.width/2, overlay.height-10);
+
+
   //create the x and y axis
   canvas.beginPath(); 
   canvas.moveTo(overlay.width/2, 0); 
