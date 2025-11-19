@@ -88,6 +88,7 @@ function drawCompass(canvas){
 5. It's time to create your own performance. Enjoy !!
 
 ## Demo
+![demo](./media/demo.mov)
 
 ## Troubleshooting
 1. "media not found": go to Options -> File Preferences and add the paths to the images and audio files as shown below. 
