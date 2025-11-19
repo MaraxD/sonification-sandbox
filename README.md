@@ -1,6 +1,9 @@
 # Sonification Sandbox
 
 ## Concept
+As a wise man once said, history repeats twice: the first time as tragedy, the second time as farce. Since we're allegedly past the end of history, what comes after farce? I would argue: LARP! The post-post-modern political subject is best described as an NPC: it switches ideologies as often as socks, has 2 or 3 preloaded, repeated catchphrases it spits at you randomly, and it can barely be made to shut up or get out of the way, unless ran over by car or shot in the throat with your dad's riffle. Our interactive installation ironically comments on the memeification of political discourse, and on the contemporary strategy (popular among certain parties) of "flooding the zone with shit". But as the Dadaist noted first, and internet shitposters later unwittingly echoed, there's a thin line separating cacophony from poetry. 
+
+The sonification sandbox is designed precisely along this tension. Through two simple hand gestures, the performer gains access to a double-layered political compass. The foreground presents historical figures; the background contains cartoon characters. Each point on the map pairs two pop-cultural icons from different categories, based on their ideological affinity, or at least on a playful approximation of it. The 48 total real and fictional characters, equally distributed across the four quadrants, each have an associated looping soundbite. By exploring the map, performers trigger these loops, generating some form of accidental and ephemeral spoken-word poetry. The result is sometimes chaotic, sometimes unexpectedly rhythmic, and most likely totally nonsensical. Yet that's precisely what I think makes it able to capture the current moment pretty well.
 
 ## How to use
 1. Download this project and clone this repo https://github.com/lysdexic-audio/jweb-hands-landmarker.
@@ -94,5 +97,5 @@ function drawCompass(canvas){
 1. "media not found": go to Options -> File Preferences and add the paths to the images and audio files as shown below. 
 ![alt text](./media/file_paths.jpg)
 
-**Made by: Mara & Hana**
+**Made by:** Mara & Hana
 
