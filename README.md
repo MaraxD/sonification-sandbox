@@ -5,7 +5,7 @@
 ## How to use
 1. Download this project and clone this repo https://github.com/lysdexic-audio/jweb-hands-landmarker.
 2. Replace the `jweb-hands-landmarker.maxpat` from lysdexic-audio's project (`jweb-hands-landmarker`) with the patch from this project.
-3. Add the contents of `script.js` into the contents of `jweb-hands-landmarker/js/jweb-hands-landmarker.js`. The final code should look something like this
+3. Add the folder `title-imgs` into the folder `jweb-hands-landmarker`, then add the contents of `script.js` into the contents of `jweb-hands-landmarker/js/jweb-hands-landmarker.js`. The final code should look something like this
 ```js
 // IIFE for top level await
 (async () => { 
@@ -39,13 +39,24 @@ let pointCoordinates={
 }
 
 function drawCompass(canvas){
-  // add axis text
-  canvas.font = "20px Arial";
-  canvas.fillText("Authoritarian", (overlay.width/2), 20);
-  canvas.fillText("Left", 0, overlay.height/2);
-  canvas.fillText("Right", overlay.width-50, overlay.height/2);
-  canvas.fillText("Libertarian", overlay.width/2, overlay.height-10);
+  // add axis text as photos (dont ask me why)
 
+  const img=new Image();
+  const img2=new Image();
+  const img3=new Image();
+  const img4=new Image();
+
+  img.addEventListener("load", ()=>{
+    canvas.drawImage(img, (overlay.width/2)-100, 5, 200, 40);
+    canvas.drawImage(img3, overlay.width-50, overlay.height/2-50, 50, 85);
+    canvas.drawImage(img2, 0, overlay.height/2-50, 50, 85);
+    canvas.drawImage(img4, (overlay.width/2)-80, overlay.height-30, 170, 30);
+  });
+
+  img.src="./title-images/auth.png";
+  img2.src="./title-images/right.png";
+  img3.src="./title-images/left.png";
+  img4.src="./title-images/lib.png";
 
   //create the x and y axis
   canvas.beginPath(); 
@@ -77,3 +88,8 @@ function drawCompass(canvas){
 5. It's time to create your own performance. Enjoy !!
 
 ## Demo
+
+## Troubleshooting
+1. "media not found": go to Options -> File Preferences and add the paths to the images and audio files as shown below. 
+![alt text](./media/file_paths.jpg)
+
