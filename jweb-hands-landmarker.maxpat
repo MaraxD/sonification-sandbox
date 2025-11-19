@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 1358.0, 919.0 ],
+		"rect" : [ 34.0, 87.0, 1206.0, 917.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,42 +39,6 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
-				"box" : 				{
-					"id" : "obj-223",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 746.0, 891.0, 107.0, 22.0 ],
-					"text" : "if $i1 == 0 then $i1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-222",
-					"maxclass" : "number",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 719.0, 831.0, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-205",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "int" ],
-					"patching_rect" : [ 698.0, 780.0, 22.0, 22.0 ],
-					"text" : "t 1"
-				}
-
-			}
-, 			{
 				"box" : 				{
 					"id" : "obj-199",
 					"maxclass" : "message",
@@ -118,9 +82,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1198.5, 470.0, 24.0, 24.0 ],
+					"patching_rect" : [ 793.0, 1421.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 959.0, 609.0, 44.0, 44.0 ]
+					"presentation_rect" : [ 540.0, 527.0, 44.0, 44.0 ]
 				}
 
 			}
@@ -156,7 +120,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1214.5, 1812.0, 116.0, 49.0 ],
-					"text" : "19 \"Homer Simpson\" 1462.857143"
+					"text" : "20 \"Traian Basescu\" 3378.503401"
 				}
 
 			}
@@ -277,7 +241,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 979.0, 1431.5, 72.0, 35.0 ],
-					"text" : "\"Homer Simpson\""
+					"presentation" : 1,
+					"presentation_rect" : [ 823.0, 527.0, 114.0, 22.0 ],
+					"text" : "\"Traian Basescu\""
 				}
 
 			}
@@ -557,12 +523,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-194",
-					"linecount" : 7,
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1192.5, 343.0, 150.0, 100.0 ],
-					"text" : "todos:\n-> make sounds play from where they were last stopped\n-> add readme\n-> when no hand is detected, stop the sound"
+					"patching_rect" : [ 1192.5, 343.0, 150.0, 60.0 ],
+					"text" : "todos:\n-> make sounds play from where they were last stopped :((((("
 				}
 
 			}
@@ -988,157 +954,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-193",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 2286.0, 239.423084914684296, 150.0, 20.0 ],
-					"text" : "start/pause/resume"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-178",
-					"maxclass" : "newobj",
-					"numinlets" : 4,
-					"numoutlets" : 4,
-					"outlettype" : [ "bang", "bang", "bang", "" ],
-					"patching_rect" : [ 2337.923078656196594, 266.346162736415863, 59.5, 22.0 ],
-					"text" : "sel 0 1 2"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-180",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 2311.961539328098297, 300.000010013580322, 32.5, 22.0 ],
-					"text" : "0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-181",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 2351.384617567062378, 300.000010013580322, 32.5, 22.0 ],
-					"text" : "0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-182",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"patching_rect" : [ 2447.538466930389404, 350.000011682510376, 47.0, 22.0 ],
-					"text" : "float 0."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-183",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "float" ],
-					"patching_rect" : [ 2508.115392029285431, 422.115398705005646, 76.0, 22.0 ],
-					"text" : "snapshot~ 1"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-184",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 2386.961541831493378, 300.000010013580322, 32.5, 22.0 ],
-					"text" : "1."
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-186",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 2386.961541831493378, 350.000011682510376, 33.0, 22.0 ],
-					"text" : "sig~"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-187",
-					"maxclass" : "newobj",
-					"numinlets" : 3,
-					"numoutlets" : 3,
-					"outlettype" : [ "signal", "signal", "signal" ],
-					"patching_rect" : [ 2358.11538702249527, 398.076936364173889, 140.0, 22.0 ],
-					"text" : "groove~ pauseresume 2"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-188",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 2294.0, 153.5, 50.0, 22.0 ],
-					"text" : "replace"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 12.0,
-					"id" : "obj-189",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "float", "bang" ],
-					"patching_rect" : [ 2294.0, 196.0, 134.0, 22.0 ],
-					"text" : "buffer~ pauseresume 2"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-143",
 					"linecount" : 2,
 					"maxclass" : "comment",
@@ -1157,7 +972,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 829.0, 1197.660577178001404, 90.0, 60.0 ],
-					"presentation_linecount" : 5,
 					"text" : "plane index\n1-point finger\n2-politicians\n3-characters"
 				}
 
@@ -1218,7 +1032,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1383.0, 1507.0, 138.117693720066654, 22.0 ],
-					"text" : "\"Homer Simpson.jpg\""
+					"text" : "\"Traian Basescu.jpg\""
 				}
 
 			}
@@ -1231,10 +1045,10 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "jit_matrix" ],
-					"patching_rect" : [ 1575.0, 1617.426045447315573, 115.803627831582133, 375.390283507746119 ],
-					"pic" : "Homer Simpson.jpg",
+					"patching_rect" : [ 1575.0, 1617.426045447315573, 115.803627831582133, 162.53997078152517 ],
+					"pic" : "Traian Basescu.jpg",
 					"presentation" : 1,
-					"presentation_rect" : [ 701.0, 142.0, 203.0, 400.0 ]
+					"presentation_rect" : [ 690.0, 149.0, 203.0, 284.927291886195974 ]
 				}
 
 			}
@@ -6690,7 +6504,9 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 835.046955329200841, 137.0, 24.0, 24.0 ]
+					"patching_rect" : [ 835.046955329200841, 137.0, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 690.0, 35.0, 32.0, 32.0 ]
 				}
 
 			}
@@ -8478,13 +8294,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-205", 0 ],
-					"source" : [ "obj-131", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-45", 0 ],
 					"source" : [ "obj-131", 1 ]
 				}
@@ -8935,36 +8744,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-180", 0 ],
-					"order" : 1,
-					"source" : [ "obj-178", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-181", 0 ],
-					"source" : [ "obj-178", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-184", 0 ],
-					"source" : [ "obj-178", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-184", 0 ],
-					"order" : 0,
-					"source" : [ "obj-178", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-139", 0 ],
 					"order" : 0,
 					"source" : [ "obj-18", 0 ]
@@ -8989,66 +8768,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-187", 0 ],
-					"source" : [ "obj-180", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-186", 0 ],
-					"source" : [ "obj-181", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-187", 1 ],
-					"source" : [ "obj-182", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-182", 1 ],
-					"source" : [ "obj-183", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-182", 0 ],
-					"order" : 0,
-					"source" : [ "obj-184", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-186", 0 ],
-					"order" : 1,
-					"source" : [ "obj-184", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-187", 0 ],
-					"source" : [ "obj-186", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-183", 0 ],
-					"source" : [ "obj-187", 2 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-189", 0 ],
-					"source" : [ "obj-188", 0 ]
+					"destination" : [ "obj-199", 0 ],
+					"source" : [ "obj-185", 0 ]
 				}
 
 			}
@@ -9087,13 +8808,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-85", 0 ],
 					"source" : [ "obj-20", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-222", 0 ],
-					"source" : [ "obj-205", 0 ]
 				}
 
 			}
@@ -9873,9 +9587,9 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "Homer Simpson.jpg",
-				"bootpath" : "~/Desktop/master/an 2/creative coding/sonification-sandbox/characters-imgs",
-				"patcherrelativepath" : "../sonification-sandbox/characters-imgs",
+				"name" : "Traian Basescu.jpg",
+				"bootpath" : "~/Desktop/master/an 2/creative coding/sonification-sandbox/ppl-imgs",
+				"patcherrelativepath" : "../sonification-sandbox/ppl-imgs",
 				"type" : "JPEG",
 				"implicit" : 1
 			}

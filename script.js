@@ -10,12 +10,24 @@ let pointCoordinates={
 }
 
 function drawCompass(canvas){
-  // add axis text
-  canvas.font = "20px Arial";
-  canvas.fillText("Authoritarian", (overlay.width/2), 20);
-  canvas.fillText("Left", 0, overlay.height/2);
-  canvas.fillText("Right", overlay.width-50, overlay.height/2);
-  canvas.fillText("Libertarian", overlay.width/2, overlay.height-10);
+  // add axis text as photos (dont ask me why)
+
+  const img=new Image();
+  const img2=new Image();
+  const img3=new Image();
+  const img4=new Image();
+
+  img.addEventListener("load", ()=>{
+    canvas.drawImage(img, (overlay.width/2)-100, 5, 200, 40);
+    canvas.drawImage(img3, overlay.width-50, overlay.height/2-50, 50, 85);
+    canvas.drawImage(img2, 0, overlay.height/2-50, 50, 85);
+    canvas.drawImage(img4, (overlay.width/2)-80, overlay.height-30, 170, 30);
+  });
+
+  img.src="./title-images/auth.png";
+  img2.src="./title-images/right.png";
+  img3.src="./title-images/left.png";
+  img4.src="./title-images/lib.png";
 
 
   //create the x and y axis
