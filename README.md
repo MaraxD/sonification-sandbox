@@ -94,3 +94,5 @@ function drawCompass(canvas){
 1. "media not found": go to Options -> File Preferences and add the paths to the images and audio files as shown below. 
 ![alt text](./media/file_paths.jpg)
 
+**Made by: Mara & Hana**
+
